@@ -8,6 +8,8 @@ public class TestMe001 {
 		System.out.println("Hello, world ...");
 		System.out.println("Hello, Jenkins ...");
 		System.out.println("Hello, Jenkins 002 ...");
+		
+		System.out.println("Hello, Jenkins with Github ...");
 
 	}
 
