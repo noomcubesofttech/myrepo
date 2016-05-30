@@ -75,7 +75,8 @@
  <!--
    Build the distribution files
   -->
- <target name="dist" depends="test,compile,docs" description="generate the distribution" >
+ <!--target name="dist" depends="test,compile,docs" description="generate the distribution" -->
+ <target name="dist" depends="test,compile" description="generate the distribution" > 	
   <!-- Create the distribution directory -->
   <mkdir dir="${dist}/lib"/>
 
@@ -90,6 +91,7 @@
  <!--
    Build the JavaDocs for this project
   -->
+<!--	
  <target name="docs" depends="init" description="Generate JavaDocs for this project" >
   <delete dir="${dist}/docs"/>
   <mkdir dir="${dist}/docs"/>
@@ -102,9 +104,10 @@
       windowtitle="MyApp Project">
 
   <classpath refid="classpath"/>
-
+-->
   <!-- Define the package set to include: all source files except unit tests -->
-  <packageset dir="src" defaultexcludes="yes">
+ <!-- 
+	<packageset dir="src" defaultexcludes="yes">
    <include name="**/**"/>
    <exclude name="**/*Test*" />
   </packageset>
@@ -113,7 +116,8 @@
   <group title="Metrics" packages="com.informit.unittest.metric.*"/>
   </javadoc>
  </target>
-
+-->
+	
  <!--
    Execute Unit Tests
   -->  
