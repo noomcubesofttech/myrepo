@@ -1,0 +1,14 @@
+<project name="myreport" basedir=".">
+
+	<target name="create-unit-test-report"
+	        description="Generate reports for executed JUnit unit tests.">
+	   <mkdir dir="report" />
+	   <junitreport todir="./report">
+	      <fileset dir="./build/test/results">
+	         <include name="TEST-*.xml"/>
+	      </fileset>
+	      <report format="frames" todir="./report/html"/>
+	   </junitreport>
+	</target>
+	
+</project>
