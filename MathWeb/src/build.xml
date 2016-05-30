@@ -13,7 +13,8 @@
  <property name="junit.results" value="../test-results"/>
 
  <!-- Set library variables -->
- <property name="lib.dir" location="${dist}/lib" />
+ <!--property name="lib.dir" location="${dist}/lib" /-->
+ <property name="lib.dir" location="../lib" />	
 
  <!-- Build the CLASSPATH -->
  <path id="classpath">
