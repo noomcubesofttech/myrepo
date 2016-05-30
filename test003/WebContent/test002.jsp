@@ -12,6 +12,7 @@
   
   <%
       out.println("i success deploy this to tomcat 7.");
+      out.println("i success deploy this to tomcat 7. with ip=192.168.1.35:9080");
   %>
   
 </body>
