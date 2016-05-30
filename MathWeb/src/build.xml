@@ -7,7 +7,7 @@
 	      <fileset dir="./build/test/results">
 	         <include name="TEST-*.xml"/>
 	      </fileset>
-	      <report format="frames" todir="./report/html"/>
+	      <report format="xml" todir="./report/html"/>
 	   </junitreport>
 	</target>
 	
