@@ -19,7 +19,6 @@
  <!-- Build the CLASSPATH -->
  <path id="classpath">
   <fileset dir="${lib.dir}" includes="*.jar"/>
-  <fileset dir="${junit.home}" includes="${junit.jar}" />
  </path>
 
  <path id="classpath.test">
