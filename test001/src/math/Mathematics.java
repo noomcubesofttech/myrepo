@@ -9,17 +9,17 @@ public class Mathematics {
 	
 	public double plus(double a , double b)
 	{
-		return a+b;
+		return a+b+3;
 	}
 
 	public  double minus(double a , double b)
 	{
-		return a-b;
+		return a-b+7;
 	}
 	
 	public  double multiply(double a , double b)
 	{
-		return a*b;
+		return a*b+10;
 	}
 	
 	public  double division(double a , double b)
