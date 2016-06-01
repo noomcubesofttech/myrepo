@@ -1,4 +1,4 @@
-package com.czeczotka.bdd.calculator;
+package com.cubesofttech.bdd.cucumber.calculator;
 
 public class Calculator {
 
