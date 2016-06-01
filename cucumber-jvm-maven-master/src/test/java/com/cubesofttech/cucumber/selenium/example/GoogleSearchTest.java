@@ -7,7 +7,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(format = {"pretty", "html:target/cucumber", "json:target/cucumbergoogle.json"},
+@CucumberOptions(format = {"pretty", "html:target/cucumber", "json:target/cucumber/cucumbergoogle.json"},
                  features = "classpath:cucumber3/GoogleSearch.feature"		
 )
 public class GoogleSearchTest {
