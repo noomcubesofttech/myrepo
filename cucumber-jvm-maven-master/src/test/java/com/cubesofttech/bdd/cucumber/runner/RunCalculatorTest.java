@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         format = { "pretty", "html:target/cucumber", "json:target/cucumber/report.json", "junit:target/cucumber/junit.xml" },
+        glue = {"com.cubesofttech.bdd.cucumber.steps"},
         features = "classpath:cucumber/calculator.feature"
 )
 public class RunCalculatorTest {
