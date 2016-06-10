@@ -25,12 +25,42 @@ public class CalculatorSteps {
     }
 
     @When("^I add (\\d+) and (\\d+)$")
-    public void i_add_and(int arg1, int arg2) throws Throwable {
+    public void i_add_and(double arg1, double arg2) throws Throwable {
         calculator.add(arg1, arg2);
     }
+    
+    @When("^I minus (\\d+) and (\\d+)$")
+    public void i_minus_and(double arg1, double arg2) throws Throwable {
+        calculator.minus(arg1, arg2);
+    }
+    
+    @When("^I multiply (\\d+) and (\\d+)$")
+    public void i_multiply_and(double arg1, double arg2) throws Throwable {
+        calculator.multiply(arg1, arg2);
+    }
+    
+    @When("^I divide (\\d+) and (\\d+)$")
+    public void i_division_and(double arg1, double arg2) throws Throwable {
+        calculator.division(arg1, arg2);
+    }
 
-    @Then("^the result should be (\\d+)$")
-    public void the_result_should_be(int result) throws Throwable {
-        assertEquals(result, calculator.getResult());
+    @Then("^the result1 should be (\\d+)$")
+    public void the_result1_should_be(double result) throws Throwable {
+        assertEquals(result, calculator.getResult1(),0);
+    }
+    
+    @Then("^the result2 should be (\\d+)$")
+    public void the_result2_should_be(double result) throws Throwable {
+        assertEquals(result, calculator.getResult2(),0);
+    }
+    
+    @Then("^the result3 should be (\\d+)$")
+    public void the_result3_should_be(double result) throws Throwable {
+        assertEquals(result, calculator.getResult3(),0);
+    }
+    
+    @Then("^the result4 should be (\\d+)$")
+    public void the_result4_should_be(double result) throws Throwable {
+        assertEquals(result, calculator.getResult4(),0);
     }
 }

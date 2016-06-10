@@ -32,6 +32,7 @@ public class SeleniumCucumberSteps {
 		driver.findElement(By.name("username")).sendKeys(username);
 		driver.findElement(By.name("password")).sendKeys(password);
 		driver.findElement(By.cssSelector("input[value='Log In']")).click();
+		
 	}
 
 	@Then("^the login is successful$")
