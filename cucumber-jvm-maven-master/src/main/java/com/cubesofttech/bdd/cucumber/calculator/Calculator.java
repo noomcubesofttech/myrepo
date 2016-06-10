@@ -38,4 +38,6 @@ public class Calculator {
     public double getResult4() {
         return result4;
     }
+    
+   
 }

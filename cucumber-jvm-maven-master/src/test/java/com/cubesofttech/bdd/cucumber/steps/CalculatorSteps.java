@@ -9,14 +9,18 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import com.cubesofttech.bdd.cucumber.calculator.Calculator;
+import com.cubesofttech.bdd.cucumber.calculator.ScienceCalculator;
 
 public class CalculatorSteps {
 
     private Calculator calculator;
+    private ScienceCalculator sciencecalculator;
 
     @Before
     public void setUp() {
         calculator = new Calculator();
+        sciencecalculator = new ScienceCalculator();
+        
     }
 
     @Given("^I have a calculator$")
@@ -62,5 +66,21 @@ public class CalculatorSteps {
     @Then("^the result4 should be (\\d+)$")
     public void the_result4_should_be(double result) throws Throwable {
         assertEquals(result, calculator.getResult4(),0);
+    }
+    
+    @Given("^I have a science calculator$")
+    public void i_have_a_sciencecalculator() throws Throwable {
+        assertNotNull(sciencecalculator);
+    }
+    
+    
+    @When("^(\\d+) power (\\d+)$")
+    public void i_power_and(int arg1, int arg2) throws Throwable {
+        sciencecalculator.power(arg1, arg2);
+    }
+    
+    @Then("^the result5 should be (\\d+)$")
+    public void the_result5_should_be(int result) throws Throwable {
+        assertEquals(result, sciencecalculator.getResult(),0);
     }
 }
