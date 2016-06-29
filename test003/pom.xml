@@ -34,7 +34,7 @@
     <configuration>
      <path>/${project.build.finalName}</path>
      <update>true</update>
-     <url>http://192.168.1.35:9080/manager/text</url>
+     <url>http://192.168.1.55:9080/manager/text</url>
      <username>manager</username>
      <password>manager</password>
     </configuration>
